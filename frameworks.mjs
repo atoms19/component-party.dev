@@ -408,6 +408,30 @@ const frameworks = [
     repositoryLink: "https://github.com/aurelia/framework",
     mainPackageName: "aurelia-framework",
   },
+  {
+    id: "dominity",
+    title: "Dominity 8",
+    frameworkName: "Dominity",
+    isCurrentVersion: true,
+    img: "framework/dominity.svg",
+    eslint:{
+      env: {
+        browser: true,
+        es2021: true,
+        node: true,
+      }
+    },
+    playgroundURL: "https://codesandbox.io/",
+    documentationURL: "https://dominity-docs.vercel.app/",
+    filesSorter(files) {
+      return sortAllFilenames(files, ["index.html","app.js"]);
+    },
+    repositoryLink: "https://github.com/atoms19/dominity.js",
+    mainPackageName: "dominityjs",
+  
+  }
+
+
 ];
 
 export function matchFrameworkId(id) {
